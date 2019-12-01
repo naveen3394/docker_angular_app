@@ -18,7 +18,7 @@ export class EditComponent implements OnInit {
   {
 this.route.paramMap.subscribe((result)=>{
   var id=result.get("id");
-  consle.log("id is "+ id);
+  console.log("id is "+ id);
 var observableresult=  this.service.SelectByNo(id);
 observableresult.subscribe((data)=>{
    console.log('data '+data);
