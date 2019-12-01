@@ -20,6 +20,7 @@ this.route.paramMap.subscribe((result)=>{
   var id=result.get("id");
 var observableresult=  this.service.SelectByNo(id);
 observableresult.subscribe((data)=>{
+   console.log('data'+data[0]);
   this.product=data[0];
     })
   })
