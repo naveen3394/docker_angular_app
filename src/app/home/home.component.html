@@ -1,0 +1,22 @@
+
+<div class="table-responsive">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                    <th>ID</th>
+                    <th>TITLE</th>
+                    <th>PRICE</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr *ngFor='let  p of product'>
+                    <td>{{p.id}}</td>
+                    <td>{{p.title}}</td>
+                    <td>{{p.price}}</td>
+                <th><a routerLink="/edit/{{p.id}}">Edit</a></th>
+                <th><a routerLink="/delete/{{p.id}}">Delete</a></th>
+            </tr>
+        </tbody>
+    </table>
+</div>
